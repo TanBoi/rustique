@@ -31,13 +31,23 @@ margin: 10px 25px 10px 25px;
 }	
 
 .navbar a p{
-color: white;
-padding: 30px 5px 5px 5px;
-margin: 0 20px 0 20px;
+letter-spacing: 3px;
+	color: white;
+	padding: 30px 5px 5px 5px;
+	margin: 0 20px 0 20px;
+	background: linear-gradient(to top, white 0,
+			  white 2px, 
+			  transparent 2.1px) no-repeat left bottom / 0 100%;
+	transition: background-size 0.4s;
 }
+.navbar a p:hover{
+  background-size: 100% 100%;
+}
+    
 
-.active{
-border-bottom: solid 2px white;
+#active{
+
+   background-size: 100% 100%;
 }
 
 
