@@ -1,0 +1,29 @@
+.container-projet{
+padding-top: 180px;
+ margin: 0 1% 0 1%;
+ background-image: url('../assets/background2.png');
+}
+.projet{
+	display: flex;
+	justify-content: center;
+	
+padding-bottom: 40px;
+}
+.title{
+
+	writing-mode: sideways-lr;
+	text-orientation: mixed;
+padding: 20px;
+color: white;
+font-size: 100px;
+width: 140px;
+font-family: 'OLD'
+
+}
+
+
+
+.separate{
+width: 80%;
+margin-bottom:40px;
+}
