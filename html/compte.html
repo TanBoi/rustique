@@ -7,7 +7,8 @@
         
 		
         <link type="text/css" rel="stylesheet" href="../css/header.css" />
-        <link type="text/css" rel="stylesheet" href="../css/footer.css" />
+		<link type="text/css" rel="stylesheet" href="../css/footer.css" />
+		<link type="text/css" rel="stylesheet" href="../css/compte.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	    <link rel="icon" href="../assets/favicon.png"/>
 	    
@@ -25,20 +26,32 @@
 				<a  href="compte.html"><p id="active">Mon Compte</p></a>
 			</ul>
 		</header>
-		
-		
-		
-		<p style="height: 1000px">cfcfcfcfccfccfccfcfcfcfcfcfcfccffcfcfccfccfccfcfcfccf<br/>
-		cgcgcgcgcgcgcgccgcgcgcgcgcgccccgcgcgcgcgc<br/>
-		cgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcccgcgccgcgcggcgcgcgcg<br/>
-		cgcgcgcgcgcgcgccgcgcgcgcgcgccccgcgcgcgcgc<br/>
-		cgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcccgcgccgcgcggcgcgcgcg<br/>
-		cgcgcgcgcgcgcgccgcgcgcgcgcgccccgcgcgcgcgc<br/>
-		cgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcccgcgccgcgcggcgcgcgcg<br/>
-		cgcgcgcgcgcgcgccgcgcgcgcgcgccccgcgcgcgcgc<br/>
-		cgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcccgcgccgcgcggcgcgcgcg<br/>
-		cgcgcgcgcgcgcgccgcgcgcgcgcgccccgcgcgcgcgc<br/>
-		cgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcccgcgccgcgcggcgcgcgcg</p>
+
+		<div id="conteneur">
+			<img class="img-test" src="../assets/photos/pizza1.jpg">
+			<div class="flexbox-1">Archive de Commande</div>
+			
+			<div class="flexbox-2">
+					<h1>Information personelles</h1>
+					<div class="box">
+						<p>12 Rue de la Pizza <button onclick="edit_adresse(this);">Modifier</button> </p>
+						<p>Dupont Jaques <button onclick="edit_name(this);">Modifier</button> </p>
+						<p>adresse.example@pizza.fr <button onclick="edit_email(this);">Modifier</button> </p>
+						<p>********** <button onclick="edit_password(this);">Modifier</button> </p>	
+					</div>
+			</div>
+
+			<div class="flexbox-3">
+				<h1>Points de fidélités</h1>
+				<div class="box">
+					<h3>74 Points </h3>
+					<p>40 Points = 1 Pizza 28cm </p>
+					<p>60 Points = 1 menu </p>
+					<p>100 Points = 1 acheté = 1 ofert </p>
+					<p><button onclick="use_points(this);">Depenser des points</button> </p>	
+				</div>
+			</div>
+		</div>
 		
 		<footer>
 			<ul class="navbot">
