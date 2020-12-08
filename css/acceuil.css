@@ -1,0 +1,195 @@
+body{
+
+font-family : system-ui, sans-serif;
+}
+.container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.content-photo{
+	flex: 1;
+	flex-direction: column;
+
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+
+	max-width: 100%;
+	max-height: 100%;
+	background-image: url("../assets/photos/pizzeria.jpg");
+	background-size: cover;
+
+	border:5px solid;
+	border-radius: 5px;
+}
+
+.content-commande{
+	display: flex;
+	flex: 4;
+	flex-direction: column;
+
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+
+	height: 600px;
+}
+
+.content-photos2 {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+
+	max-width: 100%;
+	max-height: 100%;
+	background-image: url("../assets/photos/pizza_img.jpg");
+	background-size: cover;
+
+	border: 5px solid;
+	border-radius: 5px;
+}
+
+.in-progress {
+	/*
+	display: flex;
+	align-items: center;
+	justify-content: center;*/
+	flex: 1;
+	margin-bottom: 13px;
+	max-height: 140px
+
+}
+
+h1{
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 b{
+color: white;
+-webkit-text-stroke: 2px;
+-webkit-text-stroke-color: black;
+letter-spacing: 2px;
+
+}
+.content-commande p{
+	padding: 5px;
+	margin: 0px;
+}
+
+.presentation{
+	border: 5px;
+	border-style: solid none none solid;
+	text-align: justify;
+
+}
+p{
+	color: black;
+}
+
+.boutons{
+	display: flex;
+
+	flex: 1;
+	max-height: 100px;
+
+}
+.button{
+	    border: 2px  solid black;
+		height:70px;
+		width:250px;
+		padding: 10px;
+		margin: 10px;
+    	border-radius: 5px;
+}
+.reserver{
+	display: flex;
+	/*
+	align-items: center;
+	justify-content: center;*/
+	flex: 1;
+	text-align: center;
+
+}
+
+#image a img {
+	height: 30px;
+	margin: 0px;
+	transition: 0.4s;
+}
+.commander{
+	display: flex;
+	/*
+	align-items: center;
+	justify-content: center;
+	*/
+	flex: 1;
+
+	text-align: center;
+
+	margin-right: 5px;
+
+}
+
+.visualiser{
+	display: flex;
+	/*
+	align-items: center;
+	justify-content: center;
+	*/
+	flex: 1;
+	text-align: center;
+	margin-right: 5px;
+
+}
+
+.complementaires{
+	display: flex;
+
+	flex: 1;
+
+	margin-top: 20px;
+}
+
+.content-services {
+	flex: 1;
+	margin: 5px;
+
+
+}
+
+.horaires{
+	border: solid;
+	text-align: justify;
+	border-radius: 5px;
+
+}
+
+
+.boutons a:hover,
+.boutons a:focus {
+	transition-duration: 500ms;
+	transform: scale(1.1);
+	box-shadow: 0 0 65px #CDBE9F inset, 0 0 20px #BEAE8C inset, 0 0 15px #b6a684;
+
+}
+
+/* ------ TEXT ------ */
+
+.title-section {
+	text-align: center;
+	font-family: 'Impact', sans-serif;
+	margin-top: 5px;
+	color: #000;
+	font-size: 1vw;
+	letter-spacing: 1px;
+}
