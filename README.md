@@ -5,8 +5,9 @@ USD Project
 
 # Authors
 
-GÉNEAU DE LA MARLIÈRE Quentin -
-GUILLET Clément - 
-BELIN Félix - 
-BOITTIN Tanguy
+Quentin GÉNEAU DE LA MARLIÈRE 
+<br/>Clément GUILLET
+<br/>Félix BELIN 
+<br/>Tanguy BOITTIN
+<br/>Assaad EL FELLAH IDRISSI
 
