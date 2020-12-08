@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+	<!-- HEAD -->
 	<head>
 	    <title>Réserver - LA RUSTIQUE</title>
-        
 		
+		<!-- Bootstrap CSS -->
         <link type="text/css" rel="stylesheet" href="../css/header.css" />
-        <link type="text/css" rel="stylesheet" href="../css/footer.css" />
+		<link type="text/css" rel="stylesheet" href="../css/footer.css" />
+		<link type="text/css" rel="stylesheet" href="../css/reserver.css" />
+		<link type="text/css" rel="stylesheet" href="../css/main.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	    <link rel="icon" href="../assets/favicon.png"/>
+		<link rel="icon" href="../assets/favicon.png"/>
+		
+		<!-- jquery -->
+		<script src="../js/jquery-3.5.1.min.js"></script>
+
 	    
 
-	</head>
+	</head> <!-- HEAD END -->
+
+	<!-- BODY -->
 	<body>
-			
+		<!-- HEADER -->	
 		<header>
 			<ul class="navbar">
 				<a class="logo" href="accueil.html"><img src="../assets/logo.png"></a>
@@ -23,11 +32,84 @@
 				<a  href="menu.html"><p>La Carte</p></a>
 				<a  href="compte.html"><p>Mon Compte</p></a>
 			</ul>
-		</header>
+		</header><!-- HEADER END -->	
 		
-		
-		<p style="height: 500px"></p>
-		
+		<!-- CONTAINER -->
+		<div class="container-fluid container">
+			<!-- LAYOUT -->
+			<div class="row">
+				<div class="col-md-4 col-lg-3">
+					<img src="../assets/photos/pizza_img.jpg" width="350" height="750"/>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col">
+							<h3>Carte du Restaurant : </h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<img src="../assets/photos/resto.jpg" alt="map resto">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-5">
+					<form method="POST">
+						<div class="row row-space">
+							<div class="col-2">
+								<div class="input-group">
+									<label class="label">Nom : </label>
+									<input class="input--style-4" type="text" name="Nom">
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="input-group">
+									<label class="label">Prenom : </label>
+									<input class="input--style-4" type="text" name="Prenom">
+								</div>
+							</div>
+						</div>
+						<div class="row row-space">
+							<div class="col-2">
+								<div class="input-group">
+									<label class="label">Adresse : </label>
+									<div class="input-group-icon">
+										<input class="input--style-4" type="text" name="Adresse">
+									</div>
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="input-group">
+									<label class="label">Date de reservation : </label>
+									<div class="input-group-icon">
+										<input class="input--style-2" type="date">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row row-space">
+							<div class="col-2">
+								<div class="input-group">
+									<label class="label">Email</label>
+									<input class="input--style-4" type="email" name="email">
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="input-group">
+									<label class="label">Telephone : </label>
+									<input class="input--style-4" type="text" name="phone">
+								</div>
+							</div>
+						</div>
+						<div class="p-t-15">
+							<button class="btn btn--radius-2 btn--blue" type="Valider">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div><!-- LAYOUT END -->
+		</div><!-- CONTAINER END -->
+
+		<!-- FOOTER -->	
 		<footer>
 			<ul class="navbot">
 				<p>Paiements sécurisés</p>
@@ -43,9 +125,26 @@
 		
 		
 		
-		</footer>
-		
-    </body>
+		</footer><!-- FOOTER END -->	
+
+	<script>
+		function sendAction(action) {
+			const xhr = new XMLHttpRequest();
+
+			xhr.onload = function () {
+				const lay = document.getElementById('layout');
+				lay.innerHTML = this.responseText;
+			};
+
+			xhr.open("POST", "test.php");
+
+			xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xhr.send("action="+action);
+		}
+			
+	</script>
+	<!-- ajax script end -->
+	</body><!-- BODY END -->
 </html>
 
 
