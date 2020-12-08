@@ -1,6 +1,8 @@
 body{
 	margin: 0;
 	padding: 0;
+		font-family : system-ui, sans-serif;
+
 	}
 	
 header{
@@ -49,6 +51,7 @@ letter-spacing: 3px;
 
    background-size: 100% 100%;
 }
+
 
 
 a{
