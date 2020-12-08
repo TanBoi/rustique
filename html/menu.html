@@ -5,10 +5,14 @@
 	    <title>La carte - LA RUSTIQUE</title>
         
         <link type="text/css" rel="stylesheet" href="../css/header.css" />
+        <link type="text/css" rel="stylesheet" href="../css/menu.css" />
         <link type="text/css" rel="stylesheet" href="../css/footer.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	    <link rel="icon" href="../assets/favicon.png"/>
 	    
+
+<script type="text/javascript" src="../js/menu.js">
+</script>
 	</head>
 	<body>
 			
@@ -23,7 +27,74 @@
 			</ul>
 		</header>
 		
-		<p style="height: 500px"></p>
+		<div>
+			<div class="info">
+				<div class="pizzas content">
+					<h1>Nos pizzas</h1>
+
+					<div class="box">
+					<div id="rustique" onclick="rustique(this);" class="choose-pizza">
+						<img src="../assets/photos/rustique.png">
+						<p>La Rustique</p>
+					</div>
+
+					<div id="enibien" onclick="enibien(this);" class="choose-pizza">
+						<img src="../assets/photos/enibien.png">
+						<p>L'Enibien</p>
+					</div>
+
+					<div id="londonienne" onclick="londonienne(this);" class="choose-pizza">
+						<img src="../assets/photos/londonienne.png">
+						<p>La Londonienne</p>
+
+					</div>
+				</div>
+
+				</div>
+
+
+
+<div class="change">
+				<div class="pizza content">
+					<h1 id="name_pizza">La Rustique</h1>
+					<div class="box">
+						<div id="presentation">
+							<p>DESCRIPTION RUSTIQUE</p>
+							<button onclick="chevre(this);">Chevres</button>
+							<button onclick="champignon(this);">Champignons</button>
+							<button onclick="poivron(this);">Poivron</button>
+							<button onclick="salade(this);">Salade</button>
+							<button onclick="sauce(this);">Sauce</button>
+							<button onclick="bacon(this);">Bacon</button>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+
+
+				<div class="ingredient content">
+					<h1 id="name_ingredient">Lardons</h1>
+					<div class="box">
+						<p id="description_ingredient"></p>
+
+
+					</div>
+
+				</div>
+</div>
+
+
+			</div>
+
+
+
+
+		</div>
 		
 		<footer>
 
