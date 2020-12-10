@@ -30,7 +30,7 @@ body {
   position: relative;
   background: #f34c4c;
   border: 5px solid #212529;
-  background: url('/img/indexRustique.png');
+  background: url('../assets/indexRustique.png');
   cursor: pointer;
 }
 .box2:hover  .bar{
