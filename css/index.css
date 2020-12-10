@@ -37,7 +37,7 @@ body {
   position: absolute;
   width: 100px;
   height: 5px;
-  background: #0f056b;
+  background: #ff6e41;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
@@ -80,14 +80,7 @@ left: -5px;
 left: 1200px;
 }
 }
-.box2:hover  .top{
-  -webkit-animation-name: h-move-t;
-  animation-name: h-move-t;
-}
-.box2:hover  .bottom {
-  -webkit-animation-name: h-move-b;
-  animation-name: h-move-b;
-}
+
  @-webkit-keyframes v-move-l{
 0% {
 top: 500px;
@@ -103,6 +96,15 @@ top: -5px;
 100% {
 top:500px;
 }
+}
+
+.box2:hover  .top{
+  -webkit-animation-name: h-move-t;
+  animation-name: h-move-t;
+}
+.box2:hover  .bottom {
+  -webkit-animation-name: h-move-b;
+  animation-name: h-move-b;
 }
 .box2:hover .right {
   -webkit-animation-name: v-move-r;
