@@ -1,0 +1,116 @@
+body {
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+body {
+  background: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+.box1 {
+  overflow: hidden;
+  margin: 50px auto;
+  width: 1116px;
+  height: 476px;
+}
+.box2 {
+  width: 1116px;
+  height: 476px;
+  position: relative;
+  background: #f34c4c;
+  border: 5px solid #212529;
+  background: url('/img/indexRustique.png');
+  cursor: pointer;
+}
+.box2:hover  .bar{
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background: #FF3643;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.top {
+  top: -5px;
+  left: -5px;
+}
+.right {
+  top: 43px;
+  right: -52px;
+  transform: rotate(90deg);
+}
+.bottom {
+  bottom: -5px;
+  left: -5px;
+}
+.left {
+  top: 43px;
+  left: -53px;
+  transform: rotate(90deg);
+}
+ @-webkit-keyframes h-move-b {
+ 0% {
+left: 1200px;
+}
+100% {
+left: -5px;
+}
+}
+ @keyframes h-move-t {
+ 0% {
+left: -5px;
+}
+100% {
+left: 1200px;
+}
+}
+.box2:hover  .top{
+  -webkit-animation-name: h-move-t;
+  animation-name: h-move-t;
+}
+.box2:hover  .bottom {
+  -webkit-animation-name: h-move-b;
+  animation-name: h-move-b;
+}
+ @-webkit-keyframes v-move-l{
+0% {
+top: 500px;
+}
+100% {
+top:-5px;
+}
+}
+ @keyframes v-move-r{
+ 0% {
+top: -5px;
+}
+100% {
+top:500px;
+}
+}
+.box2:hover .right {
+  -webkit-animation-name: v-move-r;
+  animation-name: v-move-r;
+}
+.box2:hover .left {
+  -webkit-animation-name: v-move-l;
+  animation-name: v-move-l;
+}
+
+
