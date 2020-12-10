@@ -29,7 +29,7 @@ body {
   height: 476px;
   position: relative;
   background: #f34c4c;
-  border: 5px solid #0f056b;
+  border: 5px solid black;
   background: url('../assets/indexRustique.png');
   cursor: pointer;
 }
@@ -37,7 +37,7 @@ body {
   position: absolute;
   width: 100px;
   height: 5px;
-  background: #FF3643;
+  background: #0f056b;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
