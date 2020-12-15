@@ -90,6 +90,7 @@
 
 .my-basket {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
 	flex: 1;
@@ -167,7 +168,16 @@
 	align-items: center;
 	justify-content: center;
 }
-
+/* ------ PANIER  ------ */
+.PizzaBasket{
+	flex: 6;
+}
+.Price{
+	flex: 2;
+}
+.CommandPizza{
+	flex:2 ;
+}
 /* ------ VOTE DE LA SEMAINE ------ */
 
 .vote {

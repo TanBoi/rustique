@@ -87,8 +87,8 @@ letter-spacing: 2px;
 }
 
 .presentation{
-	border: 5px;
-	border-style: solid none none solid;
+	/*border: 5px;
+	border-style: solid none none solid;*/
 	text-align: justify;
 
 }
@@ -168,11 +168,16 @@ p{
 }
 
 .horaires{
-	border: solid;
-	text-align: justify;
-	border-radius: 5px;
+
+	text-align: center;
+	border-radius: 25px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+
+
 
 }
+
 
 
 .boutons a:hover,
