@@ -1,66 +1,16 @@
 
 
 h1{
-
-
-letter-spacing: 1px;
+	letter-spacing: 1px;
 }
 
 h1 b{
-color: white;
--webkit-text-stroke: 2px;
--webkit-text-stroke-color: black;
+	color: white;
+	-webkit-text-stroke: 2px;
+	-webkit-text-stroke-color: black;
 }
 
-.choose-pizza{
-	width: 180px;
-	transition: 0.25s;
-}
 
-.choose-pizza:hover{
-  /*filter: drop-shadow(0 0 0.20rem black);*/
-  cursor: pointer;}
-
-.choose-pizza img{
-	width: 100%;
-
-}
-
-#presentation{
-display: flex;
-flex: 1;
-align-items: center;
-justify-content: space-around;
-flex-direction: column;
-
-	text-align: justify;
-}
-#buttons{
-display: flex;
-align-items: center;
-justify-content: space-around;
-}
-.choose-pizza p{
-
-	margin-top: 0;
-}
-.pizzas .box{
-	text-align: center;
-}
-
-.box{
-	border-radius: 25px;
-	/*border: solid 2px #FF6E4199;*/
-	padding: 10px;
-
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-	background-color: white;
-}
-
-.content{
-	width: 220px;
-	margin: 10px 20px 10px 20px;
-}
 
 .container {
 	display: flex;
@@ -84,9 +34,8 @@ justify-content: space-around;
 .info h1{
 	margin: 0 ;
 	padding:0;
-
-padding-bottom: 8px;
-padding-top: 6px;
+	padding-bottom: 8px;
+	padding-top: 6px;
 }
 
 .info{
@@ -94,6 +43,84 @@ padding-top: 6px;
 	flex: 2;
 	max-width: 100%;
 }
+
+ /*partie choix pizza*/
+.choose-pizza{
+	width: 180px;
+	transition: 0.25s;
+}
+
+.choose-pizza:hover{
+  /*filter: drop-shadow(0 0 0.20rem black);*/
+  	cursor: pointer;}
+
+.choose-pizza img{
+	width: 96%;
+
+}
+
+
+.pizza{
+	flex: 1;
+}
+/*pizza selectionné*/
+.choisi{
+	opacity: 0.9;
+
+}
+/* pizza non selectionné */
+.nchoisi{
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+.pizzas img{
+	border: solid 3px #FF6E41;
+	border-radius: 100%;
+}
+
+.choose-pizza:hover img{
+	opacity: 0.95;
+}
+
+.choose-pizza p{
+
+	margin-top: 0;
+}
+.pizzas .box{
+	text-align: center;
+}
+
+/* Presentation de la pizza selectioné */
+#presentation b{
+
+	color: #FF6E41;
+}
+
+#presentation{
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	text-align: justify;
+}
+
+/*Mise en forme générale des boites*/
+.box{
+	/*border: solid 2px #FF6E4199;*/
+	padding: 10px;
+
+	border-radius: 25px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	background-color: white;
+}
+
+.content{
+	width: 220px;
+	margin: 10px 20px 10px 20px;
+}
+
 
 .change .content{
 	height:50%;
@@ -113,6 +140,7 @@ padding-top: 6px;
 	flex-direction: column;
 }
 
+/* Boutons choix ingrédient*/
 button{
 	display: flex;
 	align-items: center;
@@ -124,37 +152,21 @@ button{
 	margin: 5px;
 	background-color: black;
 	color: white;
-
-
 }
 
 button:hover{
-
 	box-shadow: 0 8px 6px -6px black;
 	cursor: pointer;
 	border-color: #FF6E41;
 }
 
-
-.pizza{
-	flex: 1;
+#buttons{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
-.nchoisi{
-
-	opacity: 0.5;
-	transition: 0.2s;
-}
-.pizzas img{border: solid 3px #FF6E41;
-			border-radius: 100%;}
-.choose-pizza:hover img{
-	opacity: 0.95;
-}
-
-.choisi{
-opacity: 0.9;
-
-}
+/* Mise en forme box ingérdient */
 .ingredient{
 	flex: 2;
 }
@@ -166,14 +178,14 @@ opacity: 0.9;
 	font-size: 20px;
 }
 
+
 #description_ingredient1 p{
 	padding: 10px 0 10px 0;
 }
+
 #description_ingredient2 p{
 	padding: 10px 0 10px 0;}
 
-#presentation b{
 
-	color: #FF6E41;
-}
+
 

@@ -1,4 +1,5 @@
 
+//Choix de la pizza
 	function rustique(){
 	document.getElementById("name_pizza").innerHTML = "LA <b>RUSTIQUE</b>";
 	document.getElementById("presentation").innerHTML = "<p>La pizza <b>La Rustique</b> (ou encore Rustique-style pizza et Rustique-dish pizza en anglais) est une pizza qui a été inventée en 1941 à la Pizzeria La Rustique à Rennes. La pizza La Rustique présente de fortes différences par rapport à ses consœurs car elle se prépare dans un <b>moule creux</b>, et comporte une épaisse garniture. C'est un hybride entre la vieille <b>tradition américaine</b> pour les tartes et les méthodes traditionnelles de fabrication de <b>pizza de Naples</b>. Les ingrédients sont inversés car le fromage se trouve au fond et la sauce tomate sur le dessus. À Rennes, on la trouve sous différentes versions ; <b>croûte mince</b>, <b>croûte épaisse</b>, voire à deux croûtes avec la sauce sur le dessus. C'est la Spécialité de la maison, elle a été créee par <b>les parents du gérant actuel</b> de la Rustique. Cette pizza plait beaucoup pour son <b>originalité</b>, n'hésitez pas à demander aux serveurs sur place plus d'informations sur son histoire, il se feront un plaisir de prendre du temps pour discuter avec vous.</p><div id='buttons'><button onclick='chevre(this);'>Chevres</button><button onclick='champignon(this);'>Champignons</button><button onclick='poivron(this);'>Poivron</button><button onclick='salade(this);'>Salade</button><button onclick='sauce(this);'>Sauce</button><button onclick='bacon(this);'>Bacon</button></div>";
@@ -25,6 +26,8 @@
 }
 
 
+
+//Boutons des ingrédient
 	function chevre(){
 	document.getElementById("name_ingredient").innerHTML = "FROMAGE <b>DE CHEVRES</b>";
 	document.getElementById("calories").innerHTML ="<b>Calories:</b> 60 cal/g";
