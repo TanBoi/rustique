@@ -12,7 +12,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	    <link rel="icon" href="../assets/favicon.png"/>
 	    
-
+<script type="text/javascript" src="../js/commander.js">
+</script>
 	</head>
 	<body>
 		
@@ -40,6 +41,7 @@
 			<div class="content-commande">
 
 				<div class="title">Commander ma pizza</div>
+
 				
 				<div class="in-progress">
 
@@ -49,19 +51,19 @@
 					
 							<div class="img-pizza">
 
-								<a href="#"><img src="../assets/photos/rustique.png"></a>
+								<a href="menu.html"><img src="../assets/photos/rustique.png"></a>
 
 							</div>
 
 							<div class="img-pizza">
 
-								<a href="#"><img src="../assets/photos/londonienne.png"></a>
+								<a href="menu.html"><img src="../assets/photos/londonienne.png"></a>
 
 							</div>
 
 							<div class="img-pizza">
 
-								<a href="#"><img src="../assets/photos/enibien.png"></a>
+								<a href="menu.html"><img src="../assets/photos/enibien.png"></a>
 
 							</div>
 
@@ -69,21 +71,21 @@
 
 						<div class="pizza-infos">
 
-							<div class="block-type-without-border">La rustique</div>
+							<div class="block-type-without-border">Rustique</div>
 
-							<div class="block-type-without-border">La londonienne</div>
+							<div class="block-type-without-border">Londonienne</div>
 
-							<div class="block-type-without-border">L'enibienne</div>
+							<div class="block-type-without-border">Enibienne</div>
 
 						</div>
 
 						<div class="pizza-infos">
 
-							<div class="block-type-without-border">Prix : 11€</div>
+							<div class="block-type-without-border">11€</div>
 
-							<div class="block-type-without-border">Prix : 12€</div>
+							<div class="block-type-without-border">12€</div>
 
-							<div class="block-type-without-border">Prix : 10€</div> 
+							<div class="block-type-without-border">10€</div> 
 
 						</div>
 
@@ -91,12 +93,15 @@
 
 							<div class="contener-cmd">
 								
-								<select class="form-select" aria-label="Default select example">
+								<select id="quantiteRustique" class="form-select" aria-label="Default select example">
 
 										<option selected>Quantité</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
 
 								</select>
 
@@ -104,12 +109,15 @@
 
 							<div class="contener-cmd">
 
-								<select class="form-select" aria-label="Default select example">
+								<select id="quantiteLondonienne" class="form-select" aria-label="Default select example">
 
 										<option selected>Quantité</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
 
 								</select>
 
@@ -117,17 +125,30 @@
 
 							<div class="contener-cmd">
 
-								<select class="form-select" aria-label="Default select example">
+								<select id="quantiteEnibienne" class="form-select" aria-label="Default select example">
 
 										<option selected>Quantité</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
 
 								</select>
 
 							</div>
 
+						</div>
+
+						<div class="pizza-infos">
+
+							<button id="rustiqueBtn" onclick="addRustique() "><span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button> 
+
+							<button id="londonienneBtn" onclick="addLondonienne()"><span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button>
+
+							<button id="enibienneBtn" onclick="addEnibienne()" ><span class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button>
+            
 						</div>
 
 							<!-- <a href="#"><img src="../assets/photos/londonienne.png"></a>
@@ -136,8 +157,17 @@
 					</div>
 
 					<div class="my-basket">
+
+						<div class="title">Mon panier</div>
 						
-						<span class="fas fa-shopping-cart fa-2x"></span>
+						<!--<span class="fas fa-shopping-cart fa-2x"></span>-->
+						<div id="nomPizza" class="PizzaBasket" >
+						</div>
+						<div id="payer" class="Price">
+						</div>	
+						<div id="totalPizza" class="CommandPizza">
+							<button id="shop" onclick="toPaie()">COMMANDER</button>
+						</div>
 
 					</div>
 
@@ -152,15 +182,16 @@
 						<div class="entity">
 
 							<div class="block-type-without-border">Pizza prête pour</div>
-							<div class="block-type-without-border">Paiement</div>
+							<div class="block-type-without-border">Paiement par carte</div>
 							<div class="block-type-without-border">Code</div>
 							
 						</div>
 
+
 						<div class="entity">
 
 							<div class="block-type">20h15</div>
-							<div class="block-type">Effectué</div>
+							<div class="block-type">4179 ****</div>
 							<div class="block-type">USYTLA</div>
 							
 						</div>
@@ -212,9 +243,9 @@
 					<div class="entity">
 
 						<div class="block-type">Edouard</div>
-						<div class="block-type">Statut Etudiant</div>
-						<div class="block-type">35000</div>
 						<div class="block-type">Rennes</div>
+						<div class="block-type">35000</div>
+						<div class="block-type">Etudiant</div>
 						
 					</div>
 
@@ -224,9 +255,32 @@
 
 				<div class="vote">
 
-						<span class="fas fa-thumbs-up fa-2x" style="color:green"></span>
+					<div class="to-vote-pizza">
 
-						<span class="fas fa-thumbs-down fa-2x" style="color:red"></span>
+						<div class="img-pizza-vote">
+
+							<a onclick="alert('Votre vote pour la pizza Rustique a bien été pris en compte !')"><img src="../assets/photos/rustique.png"></a>
+
+						</div>
+
+						<div class="img-pizza-vote">
+
+							<a onclick="alert('Votre vote pour la pizza Enibienne a bien été pris en compte !')"><img src="../assets/photos/enibien.png"></a>
+
+						</div>
+
+					</div>
+
+					<div class="to-vote">
+
+						60%&nbsp;
+
+						<div  class="chart-max orange"></div>
+						<div  class="chart-min blue"></div>
+
+						&nbsp;40%
+
+					</div>
 
 				</div>
 
@@ -250,6 +304,9 @@
 		</footer>
 		
 		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<script type="text/js" src="../js/commander.js"></script>
+
+		<div id="lala-alert-container"><div id="lala-alert-wrapper"></div></div>
 
     </body>
 </html>
