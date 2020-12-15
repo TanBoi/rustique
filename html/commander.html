@@ -40,7 +40,7 @@
 			<!-- Content commande -->
 			<div class="content-commande">
 
-				<div class="title">Commander ma pizza</div>
+				<h1 class="title">COMMANDER <b>MA PIZZA</b></h1>
 
 				
 				<div class="in-progress">
@@ -143,41 +143,55 @@
 
 						<div class="pizza-infos">
 
-							<button id="rustiqueBtn" onclick="addRustique() "><span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button> 
+							<div class="btn-add" onclick="addRustique()">
+								
+								<span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span>
 
-							<button id="londonienneBtn" onclick="addLondonienne()"><span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button>
+							</div>
 
-							<button id="enibienneBtn" onclick="addEnibienne()" ><span class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button>
-            
+							<div class="btn-add" onclick="addLondonienne()">
+								
+								<span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span>
+
+							</div>
+
+							<div class="btn-add" onclick="addEnibienne()">
+								
+								<span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span>
+
+							</div>
+
 						</div>
-
-							<!-- <a href="#"><img src="../assets/photos/londonienne.png"></a>
-							<a href="#"><img src="../assets/photos/enibien.png"></a> -->
 
 					</div>
 
+					
 					<div class="my-basket">
-
-						<div class="title">Mon panier</div>
 						
+<h1 class="title">MON <b>PANIER</b></h1>
 						<!--<span class="fas fa-shopping-cart fa-2x"></span>-->
+
 						<div id="rustique" class="PizzaBasket" >
 						</div>
 						<div id="londonienne" class="PizzaBasket" >
 						</div>
 						<div id="enibienne" class="PizzaBasket" >
 						</div>
-						<div id="payer" class="Price">
-						</div>	
-						<div id="totalPizza" class="CommandPizza">
-							<button id="shop" onclick="toPaie()">COMMANDER</button>
+
+						<div id="payer" class="Price"></div>
+
+						<div id="totalPizza" id="shop" class="btn-command" onclick="toPaie()">
+
+							<!-- <button id="shop" onclick="toPaie()">COMMANDER</button> -->
+							COMMANDER&nbsp;<span class="fas fa-shopping-cart fa-2x"></span>
+
 						</div>
 
 					</div>
 
 				</div>
 
-				<div class="title">Pour retirer ma pizza</div>
+				<h1 class="title">POUR RETIRER <b>MA PIZZA</b></h1>
 
 				<div class="actual">
 
@@ -231,7 +245,7 @@
 			<!-- Content informations -->
 			<div class="content-infos">
 				
-				<div class="title">Mes infos</div>
+				<h1 class="title">MES <b>INFOS</b></h1>
 
 				<div class="my-infos">
 
@@ -255,7 +269,7 @@
 
 				</div>
 
-				<div class="title">La Democratic' pizza</div>
+				<h1 class="title" style="letter-spacing: 0; font-size: 24px">La Democratic' <b>pizza</b></h1>
 
 				<div class="vote">
 
