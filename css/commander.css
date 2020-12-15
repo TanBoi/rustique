@@ -170,12 +170,44 @@
 	justify-content: center;
 }
 /* ------ PANIER  ------ */
+
+.btn-add {
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-add:hover {
+	cursor: pointer;
+	background-color: lightgrey;
+}
+
+.btn-command {
+	width: 70%;
+	height: 15%;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	background-color: #ff9600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-command:hover {
+	cursor: pointer;
+	background-color: #ffa600;
+	transition: 0.2s;
+}
+
 .PizzaBasket{
 	flex: 6;
 }
+
 .Price{
 	flex: 2;
 }
+
 .CommandPizza{
 	flex:2 ;
 }

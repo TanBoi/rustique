@@ -143,16 +143,25 @@
 
 						<div class="pizza-infos">
 
-							<button id="rustiqueBtn" onclick="addRustique() "><span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button> 
+							<div class="btn-add" onclick="addRustique()">
+								
+								<span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span>
 
-							<button id="londonienneBtn" onclick="addLondonienne()"><span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button>
+							</div>
 
-							<button id="enibienneBtn" onclick="addEnibienne()" ><span class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button>
-            
+							<div class="btn-add" onclick="addLondonienne()">
+								
+								<span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span>
+
+							</div>
+
+							<div class="btn-add" onclick="addEnibienne()">
+								
+								<span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span>
+
+							</div>
+
 						</div>
-
-							<!-- <a href="#"><img src="../assets/photos/londonienne.png"></a>
-							<a href="#"><img src="../assets/photos/enibien.png"></a> -->
 
 					</div>
 
@@ -161,12 +170,16 @@
 						<div class="title">Mon panier</div>
 						
 						<!--<span class="fas fa-shopping-cart fa-2x"></span>-->
-						<div id="nomPizza" class="PizzaBasket" >
-						</div>
-						<div id="payer" class="Price">
-						</div>	
-						<div id="totalPizza" class="CommandPizza">
-							<button id="shop" onclick="toPaie()">COMMANDER</button>
+
+						<div id="nomPizza" class="PizzaBasket"></div>
+
+						<div id="payer" class="Price"></div>
+
+						<div id="totalPizza" id="shop" class="btn-command" onclick="toPaie()">
+
+							<!-- <button id="shop" onclick="toPaie()">COMMANDER</button> -->
+							COMMANDER&nbsp;<span class="fas fa-shopping-cart fa-2x"></span>
+
 						</div>
 
 					</div>
