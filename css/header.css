@@ -57,14 +57,17 @@ letter-spacing: 3px;
 a{
 text-decoration: none}
 	
-/**
- * attribution:
- * 
- * 'https://fr.freepik.com/photos/nourriture' Nourriture photo créé par bristekjegor - fr.freepik.com
- * 
- * 
- * 
- * 
- * 
- * 
- * /
+
+h1{
+	letter-spacing: 1px;
+	font-size:27px;
+}
+
+h1 b{
+	color: white;
+	-webkit-text-stroke: 2px;
+	-webkit-text-stroke-color: black;
+}
+
+
+
