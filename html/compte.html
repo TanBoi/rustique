@@ -12,7 +12,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	    <link rel="icon" href="../assets/favicon.png"/>
 	    
-
+		<script type="text/javascript" src="../js/compte.js">
+		</script>
 	</head>
 	<body>
 			
@@ -28,26 +29,76 @@
 		</header>
 
 		<div id="conteneur">
-			<img class="img-test" src="../assets/photos/pizza1.jpg">
-			<div class="flexbox-1">Archive de Commande</div>
-			
-			<div class="flexbox-2">
+			<div class="content-photo">
+				
+			</div>
+			<div class="flexbox">
+					<h1>Archive de commande</h1>
+					<div class="commandes">
+						<div class="past_commande">
+							<div class="commande_contents">
+								<h4>Commande 1</h4>
+								<p>Pizza<br>
+								Fanta</p>
+							</div>
+							<div class="commande_contents">
+								<img class="commande_img" src="../assets/photos/rustique.png">
+								<a href="commander.html"> <button onclick="re_commander(this);">Commander à nouveau</button></a>
+								<a href="accueil.html"><button onclick="laisser_avis(this);">Laisser un avis</button></a>
+							</div>
+						</div>
+						<div class="past_commande">
+							<div class="commande_contents">
+								<h4>Commande 2</h4>
+								<p>Pizza<br>
+								Salade<br>
+								Sprite</p>
+							</div>
+							<div class="commande_contents">
+								<img class="commande_img" src="../assets/photos/Salade.png">
+								<a href="commander.html"><button onclick="re_commander(this);">Commander à nouveau</button></a>
+								<a href="accueil.html"><button onclick="laisser_avis(this);">Laisser un avis</button></a>
+							</div>
+						</div>
+						<div class="past_commande">
+							<div class="commande_contents">
+								<h4>Commande 3</h4>
+								<p>Pizza<br>
+								Fanta</p>
+							</div>
+							<div class="commande_contents">
+								<img class="commande_img" src="../assets/photos/londonienne.png">
+								<a href="commander.html"><button onclick="re_commander(this);">Commander à nouveau</button></a>
+								<a href="accueil.html"><button onclick="laisser_avis(this);">Laisser un avis</button></a>
+							</div>
+						</div>
+					</div> 
+			</div>
+			<div class="flexbox">
 					<h1>Information personelles</h1>
-					<div class="box">
-						<p>12 Rue de la Pizza <button onclick="edit_adresse(this);">Modifier</button> </p>
-						<p>Dupont Jaques <button onclick="edit_name(this);">Modifier</button> </p>
-						<p>adresse.example@pizza.fr <button onclick="edit_email(this);">Modifier</button> </p>
-						<p>********** <button onclick="edit_password(this);">Modifier</button> </p>	
+					<div class="info_perso">
+						<div class="box_info">
+							<div id= "adresse" class="information">12 Rue de la Pizza</div>
+							<div id= "name" class="information">Dupont Jaques</div>
+							<div id= "email" class="information">adresse.example@pizza.fr</div>
+							<div id= "password" class="information">**********</div>
+						</div>
+						<div class="box_info">					
+							<div><button onclick="edit_adresse(this);">Modifier</button> </div>
+							<div><button onclick="edit_name(this);">Modifier</button> </div>
+							<div><button onclick="edit_email(this);">Modifier</button> </div>
+							<div><button onclick="edit_password(this);">Modifier</button> </div>
+						</div>
 					</div>
 			</div>
 
-			<div class="flexbox-3">
+			<div class="flexbox">
 				<h1>Points de fidélités</h1>
 				<div class="box">
-					<h3>74 Points </h3>
+					<h3 id="points">74 Points </h3>
 					<p>40 Points = 1 Pizza 28cm </p>
 					<p>60 Points = 1 menu </p>
-					<p>100 Points = 1 acheté = 1 ofert </p>
+					<p>100 Points = 1 acheté = 1 offert </p>
 					<p><button onclick="use_points(this);">Depenser des points</button> </p>	
 				</div>
 			</div>
