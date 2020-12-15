@@ -35,78 +35,56 @@
 		</header><!-- HEADER END -->	
 		
 		<!-- CONTAINER -->
-		<div class="container-fluid container">
-			<!-- LAYOUT -->
-			<div class="row">
-				<div class="col-md-4 col-lg-3">
-					<img src="../assets/photos/pizza_img.jpg" width="350" height="750"/>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col">
-							<h3>Carte du Restaurant : </h3>
-						</div>
+		<div class="container">
+			
+			<div class="content-photo">
+				
+			</div>
+
+			<div class="content-info">
+				<div class="title-section">Informations Client : </div>
+				<div class="my-infos">
+					<div class="entity">
+
+						<input type="text" class="block-type" placeholder="Nom"/>
+						<input type="text" class="block-type" placeholder="Adresse"/>
+						<input type="text" class="block-type" placeholder="Telephone"/>
+						<input type="text" class="block-type" placeholder="email"/>
 					</div>
-					<div class="row">
-						<div class="col">
-							<img src="../assets/photos/resto.jpg" alt="map resto">
-						</div>
+
+					<div class="entity">
+
+						<input type="text" class="block-type" placeholder="Prenom"/>
+						<input type="text" class="block-type" placeholder="code postale"/>
+						<input type="text" class="block-type" placeholder="ville"/>
+		
 					</div>
+
 				</div>
-				<div class="col-md-4 col-lg-5">
-					<form method="POST">
-						<div class="row row-space">
-							<div class="col-2">
-								<div class="input-group">
-									<label class="label">Nom : </label>
-									<input class="input--style-4" type="text" name="Nom">
-								</div>
-							</div>
-							<div class="col-2">
-								<div class="input-group">
-									<label class="label">Prenom : </label>
-									<input class="input--style-4" type="text" name="Prenom">
-								</div>
-							</div>
-						</div>
-						<div class="row row-space">
-							<div class="col-2">
-								<div class="input-group">
-									<label class="label">Adresse : </label>
-									<div class="input-group-icon">
-										<input class="input--style-4" type="text" name="Adresse">
-									</div>
-								</div>
-							</div>
-							<div class="col-2">
-								<div class="input-group">
-									<label class="label">Date de reservation : </label>
-									<div class="input-group-icon">
-										<input class="input--style-2" type="date">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row row-space">
-							<div class="col-2">
-								<div class="input-group">
-									<label class="label">Email</label>
-									<input class="input--style-4" type="email" name="email">
-								</div>
-							</div>
-							<div class="col-2">
-								<div class="input-group">
-									<label class="label">Telephone : </label>
-									<input class="input--style-4" type="text" name="phone">
-								</div>
-							</div>
-						</div>
-						<div class="p-t-15">
-							<button class="btn btn--radius-2 btn--blue" type="Valider">Submit</button>
-						</div>
-					</form>
+
+			</div>
+
+			<div class="content-resto">
+				
+				<div class="title-section">Carte du Restaurant</div>
+
+				<div class="my-infos">
+
+					<div class="content-carte">
+				
+					</div>
+
 				</div>
-			</div><!-- LAYOUT END -->
+
+				<div class="title-section">Choix de Date : </div>
+
+				<div class="date-choice">
+						date : <input type="date" class="block-type" />
+						heur : <input type="time" class="block-type" />
+				</div>
+
+			</div>
+
 		</div><!-- CONTAINER END -->
 
 		<!-- FOOTER -->	
