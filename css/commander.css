@@ -76,16 +76,18 @@
 .pizza-infos {
 	display: flex;
 	flex-direction: column;
-	flex: 1;
+	
 	align-items: center;
 	justify-content: space-around;
+
+	flex: 1;
 }
 
 .contener-cmd {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	flex:1;
+	flex: 1;
 }
 
 .my-basket {
@@ -154,12 +156,11 @@
 	align-items: center;
 	justify-content: center;
 
-	width: 60%;
-	height: 10%;
+	width: 70%;
+	height: 15%;
 
-	border-radius: 2px;
-	border: solid;
-	box-shadow: 10px 4px 15px -6px black;
+	background-color: #e7e7e7;
+	border-radius: 5px;
 }
 
 .block-type-without-border {
@@ -173,12 +174,35 @@
 .vote {
 	display: flex;
 	flex: 1;
-	align-items: center;
+	flex-direction: column;
 	justify-content: space-around;
 
 	margin-top: 5px;
 
 	border: solid;
+}
+
+.to-vote-pizza {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: space-around;
+}
+
+.to-vote {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chart-max{
+	width: 80px;
+	height: 15px;
+}
+
+.chart-min{
+	width: 60px;
+	height: 15px;
 }
 
 /* ------ TEXT ------ */
@@ -218,6 +242,29 @@
 	transition: 0.4s;
 }
 
+.img-pizza a img:hover{
+	transition: 0.2s;
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+.img-pizza-vote{
+	display: flex;
+	flex-direction: column;
+}
+
+.img-pizza-vote a img{
+	height: 60px;
+	margin: 10px 10px 10px 10px;
+	transition: 0.4s;
+}
+
+.img-pizza-vote a img:hover{
+	transition: 0.2s;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
 .img-icon{
 	display: flex;
 	flex-direction: column;
@@ -230,6 +277,10 @@
 }
 
 /* ------ COLORS ------ */
+
+.orange {
+	background-color: #FF6E41;
+}
 
 .red {
 	background-color: red;
