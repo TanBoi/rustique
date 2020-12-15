@@ -134,3 +134,14 @@
 	font-size: 1vw;
 	letter-spacing: 1px;
 }
+
+.btn {
+    background-color: rgb(104, 91, 91);
+    color: black;
+    border: 2px solid #555555;
+  }
+
+.btn:hover {
+    background-color: #555555;
+    color: white;
+  }
