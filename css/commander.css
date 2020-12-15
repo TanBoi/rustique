@@ -172,6 +172,7 @@
 /* ------ PANIER  ------ */
 .PizzaBasket{
 	flex: 6;
+
 }
 .Price{
 	flex: 2;
@@ -179,6 +180,23 @@
 .CommandPizza{
 	flex:2 ;
 }
+
+#enibienne{
+	justify-content: center;
+	align-items: center;
+
+}
+#londonienne{
+	justify-content: center;
+		align-items: center;
+}
+
+#rustique{
+	justify-content: center;
+		align-items: center;
+			margin-top: 20px;
+}
+
 /* ------ VOTE DE LA SEMAINE ------ */
 
 .vote {
