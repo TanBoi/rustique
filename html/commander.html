@@ -12,7 +12,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	    <link rel="icon" href="../assets/favicon.png"/>
 	    
-
+<script type="text/javascript" src="../js/commander.js">
+</script>
 	</head>
 	<body>
 		
@@ -40,6 +41,7 @@
 			<div class="content-commande">
 
 				<div class="title">Commander ma pizza</div>
+
 				
 				<div class="in-progress">
 
@@ -91,15 +93,15 @@
 
 							<div class="contener-cmd">
 								
-								<select class="form-select" aria-label="Default select example">
+								<select id="quantiteRustique" class="form-select" aria-label="Default select example">
 
 										<option selected>Quantité</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="1">4</option>
-										<option value="2">5</option>
-										<option value="3">6</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
 
 								</select>
 
@@ -107,15 +109,15 @@
 
 							<div class="contener-cmd">
 
-								<select class="form-select" aria-label="Default select example">
+								<select id="quantiteLondonienne" class="form-select" aria-label="Default select example">
 
 										<option selected>Quantité</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="1">4</option>
-										<option value="2">5</option>
-										<option value="3">6</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
 
 								</select>
 
@@ -123,15 +125,15 @@
 
 							<div class="contener-cmd">
 
-								<select class="form-select" aria-label="Default select example">
+								<select id="quantiteEnibienne" class="form-select" aria-label="Default select example">
 
 										<option selected>Quantité</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="1">4</option>
-										<option value="2">5</option>
-										<option value="3">6</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
 
 								</select>
 
@@ -139,14 +141,14 @@
 
 						</div>
 
-						<div class="pizza-infos" onclick="location.href = '/create/';">
+						<div class="pizza-infos">
 
-							<span class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span>
+							<button id="rustiqueBtn" onclick="addRustique() "><span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button> 
 
-							<span class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span>
+							<button id="londonienneBtn" onclick="addLondonienne()"><span  class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button>
 
-							<span class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span>
-
+							<button id="enibienneBtn" onclick="addEnibienne()" ><span class="fas fa-arrow-alt-circle-right fa-2x" style="color:blue"></span></button>
+            
 						</div>
 
 							<!-- <a href="#"><img src="../assets/photos/londonienne.png"></a>
@@ -155,8 +157,17 @@
 					</div>
 
 					<div class="my-basket">
+
+						<div class="title">Mon panier</div>
 						
-						<span class="fas fa-shopping-cart fa-2x"></span>
+						<!--<span class="fas fa-shopping-cart fa-2x"></span>-->
+						<div id="nomPizza" class="PizzaBasket" >
+						</div>
+						<div id="payer" class="Price">
+						</div>	
+						<div id="totalPizza" class="CommandPizza">
+							<button id="shop" onclick="toPaie()">COMMANDER</button>
+						</div>
 
 					</div>
 
@@ -175,6 +186,7 @@
 							<div class="block-type-without-border">Code</div>
 							
 						</div>
+
 
 						<div class="entity">
 
