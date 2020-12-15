@@ -9,9 +9,8 @@
         <link type="text/css" rel="stylesheet" href="../css/footer.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	    <link rel="icon" href="../assets/favicon.png"/>
-	    
-
-<script type="text/javascript" src="../js/menu.js">
+	   
+		<script type="text/javascript" src="../js/menu.js">
 </script>
 	</head>
 	<body>
@@ -27,30 +26,35 @@
 			</ul>
 		</header>
 		
+		<!-- Ensemble interieur de la page (main)-->
 		<div class="container">
-<div class="content-photo">
 
-				<!-- <img src="../assets/photos/pizza_img.jpg"> -->
+			<!-- Image de pizza gauche-->
+			<div class="content-photo">
 				
 			</div>
+
+
+			<!-- Contient les boites utiles de la page -->
 			<div class="info">
 							
+			<!-- Choix de la pizza à regarder -->
 				<div class="pizzas content">
 					<h1>NOS <b>PIZZAS</b></h1>
 
 					<div class="box">
 					<div id="rustique" onclick="rustique(this);" class="choose-pizza">
-						<img src="../assets/photos/rustique.png">
+						<img src="../assets/photos/rustique.png" class="choisi">
 						<p>La Rustique</p>
 					</div>
 
 					<div id="enibien" onclick="enibien(this);" class="choose-pizza">
-						<img src="../assets/photos/enibien.png">
+						<img src="../assets/photos/enibien.png" class="nchoisi">
 						<p>L'Enibien</p>
 					</div>
 
 					<div id="londonienne" onclick="londonienne(this);" class="choose-pizza">
-						<img src="../assets/photos/londonienne.png">
+						<img src="../assets/photos/londonienne.png" class="nchoisi">
 						<p>La Londonienne</p>
 
 					</div>
@@ -59,8 +63,10 @@
 				</div>
 
 
+				<!-- Conteneur des deux box modifiées par du JS -->
+				<div class="change">
 
-<div class="change">
+				<!-- Informations sur la pizza séléctionné-->
 				<div class="pizza content">
 					<h1 id="name_pizza">LA <b>RUSTIQUE</b></h1>
 					<div class="box">
@@ -73,17 +79,14 @@
 							<button onclick="salade(this);">Salade</button>
 							<button onclick="sauce(this);">Sauce</button>
 							<button onclick="bacon(this);">Bacon</button>
-</div>
+							</div>
 						</div>
-
 
 					</div>
 
 				</div>
 
-
-
-
+				<!-- Informations sur l'ingrédient séléctionné-->
 				<div class="ingredient content">
 					<h1 id="name_ingredient">LE <b>CHEVRE</b></h1>
 					<div class="box">
@@ -97,19 +100,17 @@
 							<p id="prix"><b>Prix au kilo:</b> 10e</p>
 							<p id="note"><b>Note:</b> 3/5</p>
 						</div>
-
-
 					</div>
+				</div>
 
 				</div>
-</div>
 
-
+			<!-- fin info-->
 			</div>
 
 
 
-
+		<!-- fin container (main) -->
 		</div>
 		
 		<footer>
