@@ -14,13 +14,13 @@ function addRustique(){
 	*/
 	var rustiqueElt = document.createElement("p"); // Création d'un élément li
 	rustiqueElt.id = "rustique"; // Définition de son identifiant
-	if ((document.getElementById("quantiteRustique").value)== "Quantité"){
+	if ((document.getElementById("quantiteRustique").value)== "0"){
 	}
 	else{
 		rustiqueElt.textContent = "La Rustique"+"  "+" x"+document.getElementById("quantiteRustique").value; // Définition de son contenu textuel
 	}
 
-	document.getElementById("nomPizza").appendChild(rustiqueElt); // Insertion du nouvel élément
+	document.getElementById("rustique").innerHTML=rustiqueElt.textContent; // Insertion du nouvel élément
 
 	console.log("clic enibienne");
 }
@@ -33,12 +33,12 @@ function addLondonienne(){
 	*/
 	var londonienneElt = document.createElement("p"); // Création d'un élément li
 	londonienneElt.id = "londonienne"; // Définition de son identifiant
-	if ((document.getElementById("quantiteLondonienne").value)== "Quantité"){
+	if ((document.getElementById("quantiteLondonienne").value)== "0"){
 	}
 	else{
 		londonienneElt.textContent = "La Londonienne"+"  "+" x"+document.getElementById("quantiteLondonienne").value; // Définition de son contenu textuel
 	}
-	document.getElementById("nomPizza").appendChild(londonienneElt); // Insertion du nouvel élément
+	document.getElementById("londonienne").innerHTML=londonienneElt.textContent; // Insertion du nouvel élément
 
 	console.log("clic enibienne");
 }
@@ -51,12 +51,12 @@ function addEnibienne(){
 	*/
 	var enibienneElt = document.createElement("p"); // Création d'un élément li
 	enibienneElt.id = "enibienne"; // Définition de son identifiant
-	if ((document.getElementById("quantiteEnibienne").value)== "Quantité"){
+	if ((document.getElementById("quantiteEnibienne").value)== "0"){
 	}
 	else{
 		enibienneElt.textContent = "L'Enibienne"+"  "+" x"+document.getElementById("quantiteEnibienne").value; // Définition de son contenu textuel
 	}
-	document.getElementById("nomPizza").appendChild(enibienneElt); // Insertion du nouvel élément
+	document.getElementById("enibienne").innerHTML=enibienneElt.textContent; // Insertion du nouvel élément
 
 	console.log("clic enibienne");
 }
@@ -68,6 +68,6 @@ function toPaie(){
 	shopElt.textContent = "Total à payer: "+" "+total+"€";// Définition de son contenu textuel
 	console.log(total);
 	
-	document.getElementById("payer").appendChild(shopElt); // Insertion du nouvel élément
+	document.getElementById("payer").innerHTML=shopElt.textContent; // Insertion du nouvel élément
 }
 
