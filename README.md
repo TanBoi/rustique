@@ -3,6 +3,8 @@
 Projet CCU / 
 USD Project
 
+[Website of the project](https://tanboi.github.io/rustique/)
+
 # Authors
 
 Quentin GÉNEAU DE LA MARLIÈRE 

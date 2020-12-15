@@ -1,7 +1,4 @@
-body{
 
-	font-family : system-ui, sans-serif;
-}
 
 h1{
 
@@ -21,7 +18,7 @@ color: white;
 }
 
 .choose-pizza:hover{
-  filter: drop-shadow(0 0 0.20rem black);
+  /*filter: drop-shadow(0 0 0.20rem black);*/
   cursor: pointer;}
 
 .choose-pizza img{
@@ -52,23 +49,24 @@ justify-content: space-around;
 }
 
 .box{
-	border-radius: 10px;
-	border: solid 5px black;
+	border-radius: 25px;
+	/*border: solid 2px #FF6E4199;*/
 	padding: 10px;
 
-	box-shadow: 8px 8px 6px -6px black;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 	background-color: white;
 }
 
 .content{
 	width: 220px;
-	margin: 20px;
+	margin: 10px 20px 10px 20px;
 }
 
 .container {
 	display: flex;
 	width: 100%;
 	height: 100%;
+	margin-bottom: 10px;
 }
 .content-photo{
 	flex: 1;
@@ -79,14 +77,16 @@ justify-content: space-around;
 	max-height: 100%;
 	background-image: url("../assets/photos/pizza_img.jpg");
 	background-size: cover;
-	border: solid;
 	border-radius: 10px;
-	border: solid 5px black;
+	
 }
 
 .info h1{
 	margin: 0 ;
 	padding:0;
+
+padding-bottom: 8px;
+padding-top: 6px;
 }
 
 .info{
@@ -101,7 +101,7 @@ justify-content: space-around;
 }
 
 .change .box{
-	height: 78.8%;
+	height: 81.5%;
 }
 
 .change{
@@ -122,8 +122,8 @@ button{
 	border: solid black;
 	transition: 0.25s ease-out;
 	margin: 5px;
-	background-image: linear-gradient(to bottom right, #fff,  #ddd);
-	color: black;
+	background-color: black;
+	color: white;
 
 
 }
@@ -140,14 +140,20 @@ button:hover{
 	flex: 1;
 }
 
-.pizzas img{
+.nchoisi{
 
 	opacity: 0.5;
 	transition: 0.2s;
 }
-.pizzas img:hover{
+.pizzas img{border: solid 3px #FF6E41;
+			border-radius: 100%;}
+.choose-pizza:hover img{
+	opacity: 0.95;
+}
 
-	opacity: 1;
+.choisi{
+opacity: 0.9;
+
 }
 .ingredient{
 	flex: 2;
