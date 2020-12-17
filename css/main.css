@@ -57,10 +57,7 @@ html {
   box-sizing: border-box;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
+
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -76,7 +73,7 @@ html {
  */
 body,
 h1, h2, h3, h4, h5, h6,
-blockquote, p, pre,
+blockquote, pre,
 dl, dd, ol, ul,
 figure,
 hr,
@@ -123,14 +120,14 @@ button {
 .page-wrapper {
   min-height: 100vh;
 }
-
+/*
 body {
   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
-
-h1, h2, h3, h4, h5, h6 {
+*/
+ h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 

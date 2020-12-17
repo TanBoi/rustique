@@ -1,5 +1,11 @@
 /* ------ CONTAINER ------ */
 
+	
+
+body{
+	background-image: url("../assets/photos/piza.jpg");
+}
+
 .container {
 	display: flex;
 	width: 100%;
@@ -63,7 +69,7 @@
 	flex: 2;
 
 	margin-right: 1px;
-
+background-color: white;
 
 	border-radius: 25px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);border: solid 3px black;
@@ -101,7 +107,7 @@
 
 	margin-left: 9px;
 
-	
+	background-color: white;
 	border-radius: 25px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);border: solid 3px black;
 }
@@ -120,7 +126,7 @@
 
 	margin-right: 5px;
 
-
+background-color: white;
 	border-radius: 25px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);border: solid 3px black;
 }
@@ -134,7 +140,7 @@
 
 	background-color: #C8FFAD;
 	margin-left: 5px;
-
+background-color: white;
 	border-radius: 25px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);border: solid 3px black;
 }
@@ -146,7 +152,7 @@
 	flex: 2;
 
 	margin-bottom: 5px;
-
+background-color: white;
 	
 	border-radius: 25px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);border: solid 3px black;
@@ -247,7 +253,7 @@
 	justify-content: space-around;
 
 	margin-top: 5px;
-
+background-color: white;
 	
 	border-radius: 25px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);border: solid 3px black;
@@ -284,7 +290,7 @@
 }
 
 .title {
-	font-family: 'Impact', sans-serif;
+	font-family: system-ui, sans-serif;
 	margin: 0px;
 	color: #000;
 	font-size: 25px;

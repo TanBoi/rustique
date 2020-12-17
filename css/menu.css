@@ -27,7 +27,7 @@ h1 b{
 	max-height: 100%;
 	background-image: url("../assets/photos/pizza_img.jpg");
 	background-size: cover;
-	border-radius: 10px;
+	border: solid;
 	
 }
 
@@ -168,8 +168,12 @@ button:hover{
 
 /* Mise en forme box ingérdient */
 .ingredient{
-	flex: 2;
+	flex: 2; 
 }
+body{
+	background-image: url("../assets/photos/piza.jpg");
+}
+
 
 .ingredient .box{	
 	display: flex;
