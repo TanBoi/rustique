@@ -1,6 +1,6 @@
 # La Rustique - Site internet d'une Pizzéria
 
-Projet réalisé en module de CAI à l'ENIB (Conception d'applications intéractives) dans le cadre d'un cours de dévelloppement Web.
+Projet réalisé en module de CAI à l'ENIB (Conception d'applications intéractives) dans le cadre d'un cours de développement Web (HTML/CSS/JS).
 
 Site web sans backend et non responsive.
 
