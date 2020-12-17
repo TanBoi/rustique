@@ -7,7 +7,7 @@ Site web sans backend et non responsive.
 # Lancement du site 
 
 On peut accéder au site web par le lien suivant:
-[Lien du site](https://tanboi.github.io/rustique/)
+[La Rustique](https://tanboi.github.io/rustique/)
 Ou en téléchargeant ce dépot GitHub et en ouvrant index.html avec son navigateur.
 
 (Utiliser de préférence Chrome ou Safari)
