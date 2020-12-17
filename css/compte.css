@@ -1,3 +1,9 @@
+
+body{
+  background-image: url("../assets/photos/piza.jpg");
+}
+
+
 #conteneur{
   display : -webkit-box;
   display : -ms-flexbox;
@@ -58,6 +64,7 @@
   margin-bottom: 15px;
   border-radius: 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 .commande_contents{
   flex: 1;
@@ -83,6 +90,7 @@
   justify-content: space-around;
   border-radius: 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 .box{
   display: flex;
@@ -94,6 +102,7 @@
   justify-content: space-around;
   border-radius: 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 .box_info{
   display: flex;
