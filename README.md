@@ -8,8 +8,8 @@ Site web sans backend et non responsive.
 
 On peut accéder au site web par le lien suivant:
 [La Rustique](https://tanboi.github.io/rustique/)
-Ou en téléchargeant ce dépot GitHub et en ouvrant index.html avec son navigateur.
-
+ou en téléchargeant ce dépot GitHub et en ouvrant index.html avec son navigateur.
+<br/><br/>
 (Utiliser de préférence Chrome ou Safari)
 
 # Scénario d'utilisation du site 
