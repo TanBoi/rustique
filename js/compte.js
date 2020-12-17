@@ -30,3 +30,9 @@ function use_points(){
 	document.getElementById('points').innerHTML = "30" + " Points";
 }
 
+function laisser_avis(){
+	var avis = prompt('Laisser nous savoir comment était votre experience avec cetter commande :');
+	if (avis != null) {
+		alert('Votre avis à bien été pris en compte.')
+	}
+}
