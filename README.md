@@ -12,6 +12,10 @@ ou en téléchargeant ce dépot GitHub et en ouvrant index.html avec son navigat
 <br/><br/>
 (Utiliser de préférence Chrome ou Safari)
 
+# Particularité du projet
+
+Le projet a été réalisé en peu de temps, nous avons donc seulement utilisé du HTML/CSS/JS sans frameworks front-end ni back-end/serveur, les fonctionnalités sont donc simulées à l'aide de javascript sans avoir d'impact sur le reste du site. Nous proposons donc un scénario d'utilisation du site ci-dessous pour présenter ce que serait le site avec une réelle partie back-end.
+
 # Scénario d'utilisation du site 
 
 Tout d’abord je me dirige sur le site web de la pizzeria La Rustica. Ensuite on me propose de consulter la carte, de réserver une table pour dîner, ou de commander une ou plusieurs pizzas. Dans mon cas, je souhaite d’abord consulter la carte. Je clique sur “Visualisez votre menu” et je peux maintenant choisir ma pizza. 
